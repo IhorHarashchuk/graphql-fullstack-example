@@ -1,0 +1,58 @@
+body{
+    background-color: #efefef;
+    color: #121212;
+    font-family: Avenir;
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.books{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.book{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 0 0 25%;
+    height: 100px;
+    margin: 15px;
+    background-color: white;
+    padding: 5px 25px;
+    box-shadow: 0 10px 15px silver;
+}
+
+#add-book{
+    display: flex;
+    background-color: white;
+    flex: 0 0 33%;
+    margin: 15px;
+    padding: 15px;
+    box-shadow: 0 10px 15px silver;
+}
+
+.field input,
+.field select{
+    width: 200px;
+    height: 40px;
+}
+
+
+.field label{
+    padding: 0 15px;
+}
+
+button{
+    background-color: cornflowerblue;
+    color: white;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
