@@ -10,7 +10,8 @@ app.use(cors());
 const port = 9003;
 
 mongoose.set('useNewUrlParser', true);
-mongoose.connect('mongodb+srv://admin:123@cluster0-j8ybn.mongodb.net/test?retryWrites=true&w=majority\n');
+mongoose.connect('mongodb+srv://admin:123@ciklum-cards-iwv8w.mongodb.net/graphql-test?retryWrites=true&w=majority',
+    {useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true});
 mongoose.connection.once('open', () => {
     console.log('connected to mongoDB')
 });
